@@ -2792,10 +2792,10 @@
                 </div>
                 <div class="parchment-card club-card">
                     <div class="club-icon-wrap" style="--club-color: #2d6e4a;">
-                        <i class="fa fa-comments"></i>
+                        <i class="fa fa-leaf"></i>
                     </div>
                     <h3>Eco Chambers Club</h3>
-                    <p>Group Discussions & Communication skills enhancement.</p>
+                    <p>Farming, environmental conservation and sustainable practices.</p>
                 </div>
                 <div class="parchment-card club-card">
                     <div class="club-icon-wrap" style="--club-color: #6e3a2d;">
@@ -2836,7 +2836,7 @@
             <div style="max-width: 600px; margin: 0 auto;">
                 <form id="contact-form" class="contact-form" onsubmit="handleContactSubmit(event)">
                     <div class="form-group" style="margin-bottom: 20px;">
-                        <input type="text" id="contact-name" placeholder="Your Name" required style="width: 100%; padding: 15px; border: 1px solid var(--soft-gold); border-radius: 8px; font-family: 'Poppins', sans-serif;">
+                        <input type="text" id="contact-name" placeholder="Your Name with Section" required style="width: 100%; padding: 15px; border: 1px solid var(--soft-gold); border-radius: 8px; font-family: 'Poppins', sans-serif;">
                     </div>
                     <div class="form-group" style="margin-bottom: 20px;">
                         <input type="email" id="contact-email" placeholder="Your Email" required style="width: 100%; padding: 15px; border: 1px solid var(--soft-gold); border-radius: 8px; font-family: 'Poppins', sans-serif;">
@@ -2865,7 +2865,7 @@
             const subject = encodeURIComponent("BCA Enquiry from " + name);
             const body = encodeURIComponent(msg);
             // Opening default mail client
-            window.location.href = `mailto:YOUR_EMAIL_PLACEHOLDER@dgvaishnavcollege.edu.in?subject=${subject}&body=${body}`;
+            window.location.href = `mailto:YOUR_EMAIL_PLACEHOLDER@dgvaishnavcollege.edu.inF?subject=${subject}&body=${body}`;
             
             setTimeout(() => {
                 document.getElementById('contact-success').style.display = 'none';
@@ -2950,7 +2950,7 @@
                 </div>
                 
                 <div class="chatbot-header-actions">
-                    <button class="nav-btn" onclick="toggleSettingsPanel()" title="Load FAQ Google Sheet" style="width: 35px; height: 35px;"><i class="fa-solid fa-cog"></i></button>
+                    <!-- <button class="nav-btn" onclick="toggleSettingsPanel()" title="Load FAQ Google Sheet" style="width: 35px; height: 35px;"><i class="fa-solid fa-cog"></i></button> -->
                     <button class="chatbot-close-btn" onclick="closeChatbot()" title="Close chat"><i class="fa-solid fa-times-circle"></i></button>
                 </div>
             </div>
@@ -2977,8 +2977,8 @@
                             <i class="fa-solid fa-scroll"></i>
                         </div>
                         <div class="message-bubble">
-                            <p>Greetings, young apprentice! I am the DGVC BCA Academic Scribe. Tell me thy questions, and I shall fetch answers from our department archives.</p>
-                            <div class="message-options">
+                            <p>Greetings, young apprentice! I am the DGVC BCA Academic Scribe. Tell me the questions, and I shall fetch answers from our department archives.</p>
+                            <!-- <div class="message-options">
                                 <button class="option-btn" style="padding: 10px 16px; margin: 4px;" onclick="handleOptionClick('What is the semester fee?')">💸 Fees</button>
                                 <button class="option-btn" style="padding: 10px 16px; margin: 4px;" onclick="handleOptionClick('How do I apply for leave?')">📝 Attendance</button>
                                 <button class="option-btn" style="padding: 10px 16px; margin: 4px;" onclick="handleOptionClick('When are results published?')">🎓 Results</button>
@@ -2989,7 +2989,7 @@
                                 <button class="option-btn" style="padding: 10px 16px; margin: 4px;" onclick="handleOptionClick('Department library')">📚 Library</button>
                                 <button class="option-btn" style="padding: 10px 16px; margin: 4px;" onclick="handleOptionClick('Who are the faculty members?')">👩‍🏫 Faculty</button>
                                 <button class="option-btn" style="padding: 10px 16px; margin: 4px;" onclick="handleOptionClick('When are CIA exams conducted?')">📝 Exams</button>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -3209,7 +3209,7 @@
             { name: "Student Forms", category: "Forms", link: "#", isLink: true },
             { name: "BCA Prospectus", category: "Pathway", link: "https://www.dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2026/04/BCA-Propectus_26-27.pdf", isLink: true },
             { name: "ESE Question Papers", category: "Question Papers", link: "https://sites.google.com/view/ddgdvclibrary/downloads", isLink: true },
-            { name: "Academic Calendar <br> 2026-2027", category: "Academic Calendar", link: "#", isLink: true },
+            { name: "Academic Calendar <br> 2026-2027", category: "Academic Calendar", link: "./Academic Calendar.pdf", isLink: true },
             { name: "BCA Syllabus", category: "Syllabus", link: "https://dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2025/07/BCA_syllabus_2025_2028_LOCF.pdf", isLink: true }
         ];
 
@@ -3739,7 +3739,7 @@
             { category: "Events", question: "What is Cyberfest?", answer: "Cyberfest is the flagship technical festival organized by the BCA department students, staff, and INFOCA forum, featuring tech competitions." },
             { category: "Events", question: "What is Ideathon?", answer: "Ideathon is a creative pitching event where students submit computational solutions, applications, or business ideas to industry panels." },
             { category: "Events", question: "Who conducts Cyberfest?", answer: "Cyberfest is organized by the BCA department students, staff, and the INFOCA forum." },
-            { category: "Events", question: "Can first years participate in events?", answer: "Yes, first-year students are encouraged to register and coordinate events to build leadership qualities." },
+            { category: "Events", question: "Can first years participate in events?", answer: "Yes, first-year students are encouraged to coordinate events to build leadership qualities." },
             { category: "Events", question: "Are there inter-collegiate events?", answer: "Yes, Cyberfest is an inter-collegiate flagship event attracting computer science departments from all across Chennai and Tamil Nadu." },
             // Python
             { category: "Python", question: "What is Python programming?", answer: "Python is a high-level interpreted programming language, taught in BCA to build logical foundations in programming." },
@@ -3778,7 +3778,7 @@
             { category: "Student Guidance", question: "What is ESE?", answer: "ESE stands for End Semester Examination — the final university exam conducted at the end of each semester. You need at least 40% marks in ESE separately to pass, regardless of your internal score." },
             { category: "Student Guidance", question: "How to improve coding skills?", answer: "Start with C in your first semester, then Python, then Java. Practice on platforms like HackerRank, CodeChef, and LeetCode. Build small personal projects — a student management system, a calculator, a to-do app. Consistent daily practice matters more than cramming." },
             { category: "Student Guidance", question: "How to prepare for placements?", answer: "Start early — from 2nd year itself. Build your aptitude (Quantitative, Reasoning, Verbal). Learn at least one programming language deeply. Work on mini projects and put them on GitHub. Polish your communication and resume. Attend mock interviews organized by the placement cell." },
-            { category: "Student Guidance", question: "How to improve communication skills?", answer: "Join the Eco Chambers Club for group discussions. Read English newspapers daily. Practice speaking in English with classmates and faculty. Participate in seminars, events, and presentations. Good communication is as important as coding for placements." },
+            { category: "Student Guidance", question: "How to improve communication skills?", answer: "Join in Departmental Clubs for group discussions. Read English newspapers daily. Practice speaking in English with classmates and faculty. Participate in seminars, events, and presentations. Good communication is as important as coding for placements." },
             { category: "Student Guidance", question: "How to maintain attendance?", answer: "Plan your leaves carefully — you can afford a maximum of 25% absence. Avoid casual bunking. If you are absent for medical reasons, always submit a medical certificate. Monitor your attendance percentage on the ERP portal regularly." },
             { category: "Student Guidance", question: "What are the rules for first year students?", answer: "Wear proper formal college uniform. Carry your ID card always. Follow lab rules strictly — no food, no USB drives in lab. Respect faculty and senior students. Submit assignments on time. Avoid malpractice in exams — strict action is taken." },
             { category: "Student Guidance", question: "How to apply for bus pass?", answer: "Apply for your government bus pass immediately after joining. Visit the college office to get the NOC (No Objection Certificate) form, then take it to the nearest MTC depot. Apply early — the first-month discount applies if applied within the first 10 days of joining." },
